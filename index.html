@@ -14,22 +14,49 @@
 
 <body>
     <nav class="sidebar">
-        <div class="sidebar__body">
-            <img src="./assets/menu.svg" alt="">
-            <img src="./assets/search.svg" alt="">
-            <img src="./assets/grid.svg" alt="">
-            <img src="./assets/pet.svg" alt="">
-            <img src="./assets/user.svg" alt="">
-            <img src="./assets/vet.svg" alt="">
-            <img src="./assets/settings.svg" alt="">
+        <div class="sidebar__header">
+            <img src="./assets/logo.svg" alt="Ícone do logo" class="hide logo">
+            <img src="./assets/menu.svg" alt="Ícone de menu da navegação." id="menu-icon" class="icons">
         </div>
+        <div class="search__place">
+            <img src="./assets/search.svg" alt="Ícone de pesquisa da navegação." class="search__place__icon">
+            <input type="text" name="search" id="seach" placeholder="Buscar" class="hide" size="14">
+        </div>
+        <ul class="sidebar__body">
+            <li class="sidebar__body__items">
+                <img src="./assets/grid.svg" alt="Ícone do dashboard da navegação." class="icons">
+                <h2 class="hide">Dashboard</h2>
+            </li>
+            <li class="sidebar__body__items">
+                <img src="./assets/pet.svg" alt="Ícone de pets da navegação" class="icons">
+                <h2 class="hide">Pets</h2>
+            </li>
+            <li class="sidebar__body__items">
+                <img src="./assets/user.svg" alt="Ícone de clientes da navegação" class="icons">
+                <h2 class="hide">Clientes</h2>
+            </li>
+            <li class="sidebar__body__items">
+                <img src="./assets/vet.svg" alt="Ícone de veterinários da navegação" class="icons">
+                <h2 class="hide">Vets</h2>
+            </li>
+            <li class="sidebar__body__items">
+                <img src="./assets/settings.svg" alt="Ícone de configuração da navegação" class="icons">
+                <h2 class="hide">Ajustes</h2>
+            </li>
+        </ul>
         <div class="sidebar__footer">
-            <img src="./assets/log-out.svg" alt="">
+            <div class="profile hide">
+                <img src="/assets/photo.jpg" alt="Imagem de perfil do usuário" class="profile__img">
+                <h3>Eleanor Pena</h3>
+                <p>Veterinária</p>
+            </div>
+            <img src="./assets/log-out.svg" alt="Ícone de saída da página">
         </div>
     </nav>
     <main class="main-content">
         <h2>Dashboard</h2>
     </main>
 </body>
+<script src="./script.js"></script>
 
 </html>
